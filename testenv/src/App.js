@@ -31,13 +31,19 @@ function App() {
         <br />
         In questa guida andremo ad <b> implemntare 2 file  .env </b> <br />
       </p>
-      <ListGroup  as="ol" numbered>
-        <ListGroup.Item   as="li">
+      <ListGroup as="ol" numbered>
+        <ListGroup.Item  as="li">
           Per lo svluppo e il testing del app, lo chiameremo local{" "}
         </ListGroup.Item>
-        <ListGroup.Item   as="li">
+        <ListGroup.Item  as="li">
           Per la messa in produzione dell app, lo chiameremo prod{" "}
         </ListGroup.Item>
+        <br />
+        <p>NB.  <u>Nel file .env in tutti e 2  casi le chiavi devo essere precedute da:</u> <br/> <br />
+             <b>REACT_APP_ + CHIAVE = REACT_APP_CHIAVE </b> <br/> <br/>
+            Per richimare le chiavi:  <spacer/>
+            <b>process.env.CHIAVE </b> <br/>
+         </p>
       </ListGroup>
       <p>
         <br/>
